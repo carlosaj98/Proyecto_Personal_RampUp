@@ -148,7 +148,7 @@ main h1 {
 
 .worksContainer a:hover{
     opacity: 15%;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .worksContainer div:hover{
@@ -274,4 +274,34 @@ img{
     }
 
 
+}
+
+@media screen and (width >= 750px) {
+    .worksContainer {
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    .worksContainer div {
+        width: 35vw;
+        height: 35vw;
+    
+    }
+    img{
+        width: 35vw;
+        height: 35vw;
+    }
+}
+
+@media screen and (width >= 1400px) {
+    .worksContainer div {
+        width: 400px;
+        height: 400px;
+    
+    }
+
+    img{
+        width: 400px;
+        height: 400px;
+    }
 }

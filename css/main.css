@@ -260,7 +260,7 @@ img {
       }
 }
 
-@media screen and (width > 750px) {
+@media screen and (width >= 750px) {
     img {
         width: min(20rem);
     }
