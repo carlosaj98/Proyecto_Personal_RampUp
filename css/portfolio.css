@@ -141,6 +141,39 @@ main h1 {
 
 }
 
+.worksContainer a{
+    z-index: 20;
+    transition: 0.5s;
+}
+
+.worksContainer a:hover{
+    opacity: 15%;
+    transition: 0.5s;
+}
+
+.worksContainer div:hover{
+    background: linear-gradient(0deg, #15202b 0%, #101014 100%);
+    
+}
+
+.worksContainer p{
+    padding-top: 100px;
+    line-height: 4rem;
+    font-size: 1.5rem;
+    width: 400px;
+    height: 400px;
+    color: #bebec2;
+    position: absolute;
+    z-index: 10;
+}
+
+.worksContainer p span{
+    font-size: 2.2rem;
+    color: #24baff;
+}
+
+
+
 img{
     border-radius: 30px;
     width: 400px;
