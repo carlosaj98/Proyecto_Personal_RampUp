@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+primary color (blue): #24baff
+nav color (dark blue): #15202b
+backgrond color (black): #101014
+text color 1 (white): #fff
+text color 2 (gray): #bebec2
+*/
+body {
+    font-family: 'Noto Sans', sans-serif;
+    background: linear-gradient(180deg, #15202b 0%, #15202b 35%, #101014 100%);
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    background-color: #15202b;
+    z-index: 99;
+}
+
+.navContainer {
+    max-width: 1400px;
+    margin: auto;
+    padding: 1.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.textLogo a {
+
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #24baff;
+    transition: 0.3s;
+}
+
+.textLogo a:hover {
+    color: #fff;
+    padding: 1rem;
+    border-radius: 2rem;
+    background-color: #24baff;
+    transition: 0.3s;
+}
+
+.checkbox,
+nav input {
+    display: none;
+}
+
+.checkbox i {
+    font-size: 2rem;
+    color: #24baff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.navLinks {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    transition: 0.3s;
+    color: #bebec2;
+}
+
+.navLinks a {
+    color: #bebec2;
+    border: 2px solid #bebec2;
+    font-weight: 600;
+    border-radius: 1.5rem;
+    padding: 0.5rem 1rem;
+    transition: 0.3s;
+}
+
+.navLinks a:hover {
+    color: #15202b;
+    border: 2px solid #bebec2;
+    background-color: #bebec2;
+    border-radius: 1.5rem;
+    padding: 1rem 1.5rem;
+    transition: 0.3s;
+}
+
+#home {
+    border-color: #24baff;
+}
+
+#home:hover {
+    border-color: #bebec2;
+}
+
+.sectionContainer {
+    min-height: 100vh;
+    max-width: 1400px;
+    margin: auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content>:first-child {
+    color: #24baff;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.content h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 3rem;
+    color: #bebec2;
+    margin-bottom: 1rem;
+}
+
+.content h1 span {
+    color: #24baff;
+
+}
+
+.description {
+    font-size: 1.2rem;
+    line-height: 1.75rem;
+    color: #bebec2;
+    margin-bottom: 2rem;
+}
+
+.btn_CV {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn_CV a {
+    color: #bebec2;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    border: 2px solid #bebec2;
+    border-radius: 2rem;
+    transition: 0.3s;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.btn_CV a:hover {
+    color: #101014;
+    font-size: 1.2rem;
+    padding: 1.2rem 2.2rem;
+    border-radius: 2rem;
+    transition: 0.3s;
+    background-color: #bebec2;
+}
+
+.imageProfile {
+    display: grid;
+    place-items: center;
+  }
+  
+img {
+    width: min(30rem);
+    border-radius: 100%;
+    border: 5px solid #24baff;
+  }
+  
+
+/* -- 750px -- */
+
+@media screen and (width < 750px) {
+    .checkbox {
+        display: block;
+    }
+
+    .checkbox i:hover {
+        color: #15202b;
+        background-color: #bebec2;
+        padding: 0.25rem;
+        border-radius: 0.5rem;
+        transition: 0.3s;
+
+    }
+
+    .navLinks {
+        position: absolute;
+        width: 100%;
+        height: 50vh;
+        border-radius: 0px 0px 3rem 3rem;
+        left: -100%;
+        top: 85px;
+        background-color: #15202b;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        gap: 5rem;
+        transition: 0.5s;
+
+    }
+
+    .navLinks a {
+        padding: 2rem 30vw;
+        border-color: transparent;
+        transition: 0.3s;
+    }
+
+    .navLinks a:hover {
+        color: #15202b;
+        border: 2px solid #bebec2;
+        background-color: #bebec2;
+        padding: 2rem 40vw;
+        border-radius: 1.5rem;
+        transition: 0.3s;
+    }
+
+    #home {
+        border-color: transparent;
+    }
+
+    nav #check:checked~ul {
+        left: 0;
+    }
+
+    ul li a {
+        font-size: 1.5rem;
+    }
+
+    .sectionContainer {
+        padding: 10rem 1rem 5rem 1rem;
+        text-align: center;
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+      .imageProfile {
+        grid-area: 1/1/2/2;
+      }
+
+      img{
+        width: min(20rem);
+      }
+
+      .btn_CV{
+        margin: auto;
+      }
+}
