@@ -15,11 +15,6 @@ text color 2 (gray): #bebec2
 */
 body {
     font-family: 'Noto Sans', sans-serif;
-
-}
-
-main{
-    background: linear-gradient(180deg, #15202b 0%, #15202b 35%, #101014 100%);
 }
 
 a {
@@ -98,95 +93,13 @@ nav input {
     transition: 0.3s;
 }
 
-#home {
+#about {
     border-color: #24baff;
 }
 
-#home:hover {
+#about:hover {
     border-color: #bebec2;
 }
-
-.sectionContainer {
-    min-height: 100vh;
-    max-width: 1400px;
-    margin: auto;
-    padding: 1rem;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 4rem;
-}
-
-.content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.content>:first-child {
-    color: #24baff;
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-}
-
-.content h1 {
-    font-size: 2.5rem;
-    font-weight: 600;
-    line-height: 3rem;
-    color: #bebec2;
-    margin-bottom: 1rem;
-}
-
-.content h1 span {
-    color: #24baff;
-
-}
-
-.description {
-    font-size: 1.2rem;
-    line-height: 1.75rem;
-    color: #bebec2;
-    margin-bottom: 2rem;
-}
-
-.btn_CV {
-    display: flex;
-    gap: 1rem;
-}
-
-.btn_CV a {
-    color: #bebec2;
-    font-size: 1rem;
-    font-weight: 600;
-    padding: 1rem 2rem;
-    border: 2px solid #bebec2;
-    border-radius: 2rem;
-    transition: 0.3s;
-    cursor: pointer;
-    background-color: transparent;
-}
-
-.btn_CV a:hover {
-    color: #101014;
-    font-size: 1.2rem;
-    padding: 1.2rem 2.2rem;
-    border-radius: 2rem;
-    transition: 0.3s;
-    background-color: #bebec2;
-}
-
-.imageProfile {
-    display: grid;
-    place-items: center;
-  }
-  
-img {
-    width: min(30rem);
-    border-radius: 100%;
-    border: 5px solid #24baff;
-  }
-  
-
-/* -- 750px -- */
 
 @media screen and (width < 750px) {
     .checkbox {
@@ -233,7 +146,7 @@ img {
         transition: 0.3s;
     }
 
-    #home {
+    #about {
         border-color: transparent;
     }
 
@@ -245,33 +158,12 @@ img {
         font-size: 1.5rem;
     }
 
-    .sectionContainer {
-        padding: 10rem 1rem 5rem 1rem;
-        text-align: center;
-        grid-template-columns: repeat(1, 1fr);
-      }
-
-      .imageProfile {
-        grid-area: 1/1/2/2;
-      }
-
-      img{
-        width: min(15rem);
-      }
-
-      .btn_CV{
-        margin: auto;
-      }
 }
 
 @media screen and (width >= 750px) {
-    img {
-        width: min(20rem);
-    }
+
 }
 
 @media screen and (width > 1024px) {
-    img {
-        width: min(25rem);
-    }
+
 }
